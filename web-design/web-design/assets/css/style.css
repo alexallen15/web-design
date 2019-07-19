@@ -1,0 +1,215 @@
+/*This is importing fonts for my website to use*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Ultra&display=swap');
+
+/*body text*/
+body {
+    background-color: white;
+    font-family: 'Josefin Slab', 'serif';
+    font-size: 16px;
+}
+
+/*this div divides the images into 3 columns*/
+.column {
+    float: left;
+    width: 32%;
+    padding: 0.313em;
+
+}
+
+/*targeting the images inside the columns*/
+.column img {
+    height: auto;
+    border: solid 0.125em lightgrey;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*constricts the contents to fill 80% of the pages width*/
+.wrapper {
+    width: 80%;
+    /* margin:TOP/BOTTOM left/right */
+    margin: 0 auto;
+}
+
+/*the top header that holds all the navigation and main heading*/
+header {
+    background-color: lightgrey;
+    height: 5.000em;
+    position: fixed;
+    width: 100%;
+}
+
+/*custom div i made to create a line at the bottom of the header*/
+.underline {
+    background-color: grey;
+    height: 0.188em;
+    width: 100%;
+    margin-top: 0.250em;
+}
+
+/*the hero image at the top of all pages*/
+.hero {
+    background-image: url(../images/hero.jpg);
+    height: 20.625em;
+    padding-top: 5.625em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+/*small logo top rght*/
+header img {
+    max-height: 3.750em;
+    display: inline-block;
+    padding-top: 0.625em;
+    padding-right: 0.625em;
+    opacity: 0.6;
+}
+
+/*Top heading in stuck header*/
+h1 {
+    font-size: 2.5em;
+    display: inline-block;
+    position: fixed;
+    top: 0.9em;
+}
+
+/*other headings*/
+h2,
+h3 {
+    font-size: 1.875em;
+    color: black;
+    padding: 1.250em 0em 1.250em 0em;
+    text-align: center;
+    letter-spacing: 0.125em;
+    text-transform: uppercase
+}
+
+h4 {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/*the bulk of the page*/
+main {
+    line-height: 1.563em;
+    padding-top: 2.500em;
+    color: #383838;
+    background-image: url(../images/file.jpg);
+
+}
+
+/*all paragraphs within the main*/
+main p {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    font-size: 1.000em;
+    line-height: 1.563em;
+    color: #383838;
+}
+
+/*images within the main*/
+.main-image {
+    width: 50%;
+    float: left;
+    margin: 0.625em 0.625em 0.625em 0em;
+    border: 0.125em solid grey;
+
+}
+
+/*controls the font within the top list*/
+a {
+    color: black;
+    font-size: 1.250em;
+    text-decoration: none;
+}
+
+/*colour of the navigation once hovered over by cursor*/
+a:hover {
+    color: palegoldenrod;
+}
+
+/*colour of the navigation once clicked and held by cursor*/
+a:active {
+    color: palegoldenrod;
+}
+
+/*navigation*/
+nav ul {
+    list-style-type: none;
+    background-color: none;
+    margin-top: 3.125em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0.938em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: none;
+}
+
+li {
+    margin-left: 1.875em;
+    list-style: square;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    background-color: none;
+    height: 4.375em;
+}
+
+nav ul li {
+    background-color: none;
+}
+
+/*Bottom footer*/
+footer {
+    background-color: lightgrey;
+    height: 3.750em;
+}
+
+/*custon div used to create line similar to .underline*/
+.overline {
+    background-color: grey;
+    height: 0.125em;
+    width: 100%;
+}
+
+/*paragraphs within the footer*/
+footer p {
+    font-size: 1.000em;
+    color: black;
+    padding: 1.250em 0em;
+    text-align: center;
+}
+
+
+/* media query will target devices largers than 400px and less then 768 */
+
+@media screen and (min-device-width:300px) and (max-device-width:768px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    .main-image {
+        width: 95%;
+        margin: 0.625em 0.625em 0.625em 0.625em;
+        border: 0.125em solid grey;
+    }
